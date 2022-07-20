@@ -9,6 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+/*---------header part--------*/
 main{
       display: flex;
       flex-direction: column;
@@ -59,6 +60,7 @@ main{
 .banner-text a:hover{
     padding: 14px 23px;
 }
+/*------bolg part--------*/
 .navigation{
     background-color: #161616;
     width: 280px;
@@ -68,7 +70,6 @@ main{
     text-align: center;
     margin-right: 12px;
 }
-    /*position: fixed;*/
 ul li{
     list-style: none;
 }
@@ -103,9 +104,8 @@ ul li{
     margin-top: 60px;
     margin-left:60px;
     margin-right: 60px;
-    /*grid-gap: 10px;*/
-    /*display: flex;*/
 }
+/*---------tablet button-------*/
 .tablet-view{
     text-align: center;
     margin-bottom: 60px;
@@ -127,6 +127,12 @@ ul li{
     padding-top: 40px;
     text-align: center;
     margin-bottom: 65px;
+}
+.country-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 /*--------------
 footer part---
@@ -166,7 +172,7 @@ footer part---
     color: #161616;
     margin: 0 3px;
 }
-/*responsive*/
+/*responsive for tablet*/
 @media (min-width: 669px) and (max-width: 1024px){
     .banner-text{
         padding:0px;
@@ -187,10 +193,6 @@ footer part---
     justify-content: space-evenly;
     align-items: center;
     }
-    /*.navigation{
-        display: none;
-    } */
-    
     .blog-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -234,9 +236,9 @@ footer part---
     .tablet-view{
         display: block;
     }
-
-   
-
+    .service-link{
+        flex-wrap: wrap;
+    }
 }
 /*------moblie device----*/
 @media only screen and (max-width: 668px){
